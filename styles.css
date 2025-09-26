@@ -2,15 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background: #333;
-}
 
 .container {
   display: flex;
@@ -31,19 +22,20 @@ body {
   cursor: pointer;
 }
 
-.panel h3 {
+.img-text{
   position: absolute;
+	color:white;
   bottom: 20px;
   left: 20px;
   margin: 0;
-  opacity: 0;
+  opacity: 1;
 }
 
-.panel.active {
+.active {
   flex: 5;
 }
 
-.panel.active h3 {
+.panel.active.img-text {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
